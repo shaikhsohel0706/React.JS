@@ -23,5 +23,25 @@ console.log(numbers[3]);
 const[a,b,c,d,e,f]=numbers
 console.log(b);
 
+// rest oprater and spread oprater-(...) these three dotes are the syntax of these oprater
+const[first,...restNumbers]=numbers
+console.log("first:",first);
+console.log("restNumbers:",restNumbers);
+
+const obj1={
+    temp1: "34",
+    temp2: "454",
+    height:"6.1",
+    fName:"shaikh",
+    lName:"Azher",
+};
+const { temp1, temp2, ...person}=obj1
+console.log(person);
+ 
+const obj2= {...obj1};
+obj2.color="fair"
+ console.log("obj2",obj2);
+ console.log("obj1",obj1);
+
 
 
